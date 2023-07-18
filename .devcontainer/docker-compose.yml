@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  paddle-practice:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    ports:
+      - 8888:8888
+    volumes:
+      - ..:/home/developer/workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
