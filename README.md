@@ -3,20 +3,19 @@ paddle ai env for vscode
 
 # 1.windows 使用 `wsl2` 安裝 docker，不建议安装docker-desktop,请参考下方`如何在wsl2安装docker?`
 # 2.安装nvdia最新驱动,并配置`nvdia docker`环境
-```
+```bash
 # 切换管理员
 sudo -i;
-# 搜索英伟达驱动
+# !搜索英伟达驱动
 apt search nvidia-driver
-# 查找如 `nvidia-driver-535`数字选择最新的
+# !查找如 `nvidia-driver-535`数字选择最新的
 apt install  nvidia-driver-535 -y
-# 检查是否能识别到nvdia设备
+# !检查是否能识别到nvdia设备
 nvidia-smi
 
 # 安装`nvidia-container-toolkit`,具体参照[英伟达官方引导](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 #! 以下以ubuntu为例,代码来自上方连接
 
-```
 # !添加英伟达源
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
       && curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
