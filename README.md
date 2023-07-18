@@ -2,7 +2,7 @@
 paddle ai env for vscode
 
 # 1.windows 使用 `wsl2` 安裝 docker，不建议安装docker-desktop,请参考下方`如何在wsl2安装docker?`
-# 2.搜索nvdia最新驱动
+# 2.安装nvdia最新驱动,并配置`nvdia docker`环境
 ```
 # 切换管理员
 sudo -i;
