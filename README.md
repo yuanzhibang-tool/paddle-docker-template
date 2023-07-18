@@ -3,6 +3,12 @@ paddle ai env for vscode
 
 # 1.windows 使用 `wsl2` 安裝 docker，不建议安装docker-desktop,请参考下方`如何在wsl2安装docker?`
 # 2.安装nvidia最新驱动,并配置`nvidia docker`环境
+# 3.由于`paddle`镜像比较大,建议使用docker先pull再使用容器打开,例如`tag:2.5.0-gpu-cuda11.2-cudnn8.2-trt8.0`大于10GB.
+# 4.拉取镜像过慢建议使用国内加速,详情请百度.
+
+---
+
+## 配置nvidia环境
 ```bash
 # 切换管理员
 sudo -i;
